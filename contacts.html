@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Мой сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contacts-wrapper">
+            <div class="info-card">
+                <h2>О разработчике</h2>
+                <div class="info-item"><span class="info-label">ФИО:</span> Подзорова Мария Сергеевна</div>
+                <div class="info-item"><span class="info-label">Email:</span> <a href="mailto:podzorova2009@gmail.com">podzorova2009@gmail.com</a></div>
+                <div class="info-item"><span class="info-label">Специализация:</span> Веб-разработка, Frontend</div>
+                <div class="info-item"><span class="info-label">Местоположение:</span> г. Москва, Россия</div>
+                <div class="info-item">
+                    <span class="info-label">Социальные сети:</span>
+                    <div class="social-links">
+                        <a href="#">📱 Telegram</a>
+                        <a href="#">💻 GitHub</a>
+                        <a href="#">🔗 VK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2>Форма обратной связи</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Введите имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Тема сообщения</label>
+                        <select required>
+                            <option value="" disabled selected>Выберите тему</option>
+                            <option value="question">Вопрос</option>
+                            <option value="collab">Предложение о сотрудничестве</option>
+                            <option value="support">Техническая поддержка</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Сообщение</label>
+                        <textarea rows="5" placeholder="Напишите ваше сообщение..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label><input type="checkbox" required> Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="info-card" style="margin-top: 30px;">
+            <h2>Дополнительная информация</h2>
+            <h3>График работы</h3>
+            <ul style="list-style: none; margin-bottom: 20px;">
+                <li><strong>Понедельник - Пятница:</strong> 9:00 - 18:00</li>
+                <li><strong>Суббота:</strong> 10:00 - 15:00</li>
+                <li><strong>Воскресенье:</strong> Выходной</li>
+            </ul>
+
+            <h3>Часто задаваемые вопросы (FAQ)</h3>
+            <div class="faq-item"><div class="faq-q">Как быстро вы отвечаете на сообщения?</div><div class="faq-a">Обычно в течение 24 часов в рабочие дни.</div></div>
+            <div class="faq-item"><div class="faq-q">Работаете ли вы удаленно?</div><div class="faq-a">Да, работаю удаленно с клиентами по всему миру.</div></div>
+            <div class="faq-item"><div class="faq-q">Какие технологии вы используете?</div><div class="faq-a">HTML5, CSS3, JavaScript и современные фреймворки.</div></div>
+
+            <h3>Как со мной связаться</h3>
+            <ol class="steps-list">
+                <li>Заполните форму выше или напишите в мессенджер</li>
+                <li>Укажите тему и подробно опишите вопрос или проект</li>
+                <li>Дождитесь ответа (обычно в течение 24 часов)</li>
+                <li>Обсудим детали и согласуем дальнейшие шаги</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Подзорова Мария. Все права защищены.</p>
+        <p class="js-status">JavaScript загружен и работает!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

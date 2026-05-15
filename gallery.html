@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Топ-10 моих любимых фильмов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Галерея - Топ-10 моих любимых фильмов</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="stats">
+                Изображений: <strong id="photo-count">0</strong> | Всего лайков: <strong id="total-likes">0</strong>
+            </div>
+            <div class="tags-filter">
+                <button class="like-btn" style="background:#667eea; color:white; cursor:default;">Все жанры</button>
+            </div>
+        </div>
+
+        <div class="gallery-container" id="gallery-grid">
+            <!-- Карточка 1 -->
+            <article class="gallery-card">
+                <img src="./image/image1.jpg" alt="Соник">
+                <div class="card-body">
+                    <h3>Соник</h3>
+                    <div class="card-meta">14 февраля 2020 года</div>
+                    <p class="card-desc">Отвязный ярко-синий ёжик Соник из параллельного мира вместе с новообретённым лучшим другом-человеком по имени Том знакомится со сложностями жизни на Земле и противостоит злодейскому доктору Роботнику.</p>
+                    <div class="card-actions">
+                        <div class="tags"><span class="tag">боевик</span><span class="tag">комедия</span></div>
+                        <button class="like-btn">❤️ <span class="likes">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Карточка 2 -->
+            <article class="gallery-card">
+                <img src="./image/image2.jpg" alt="Соник 2">
+                <div class="card-body">
+                    <h3>Соник 2</h3>
+                    <div class="card-meta">30 марта 2022 года</div>
+                    <p class="card-desc">Поселившись в Грин-Хилз, Соник стремится доказать, что у него есть все задатки настоящего героя. Злодейский доктор Роботник вновь строит козни вместе с напарником Наклзом.</p>
+                    <div class="card-actions">
+                        <div class="tags"><span class="tag">комедия</span><span class="tag">боевик</span></div>
+                        <button class="like-btn">❤️ <span class="likes">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Карточка 3 -->
+            <article class="gallery-card">
+                <img src="./image/image3.jpg" alt="Соник 3">
+                <div class="card-body">
+                    <h3>Соник 3</h3>
+                    <div class="card-meta">20 марта 2024 года</div>
+                    <p class="card-desc">Команда предстоит столкнуться с чёрным ёжиком Шэдоу, созданным дедушкой доктора Роботника в рамках эксперимента под названием «Проект Тень».</p>
+                    <div class="card-actions">
+                        <div class="tags"><span class="tag">комедия</span><span class="tag">боевик</span></div>
+                        <button class="like-btn">❤️ <span class="likes">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Карточка 4 -->
+            <article class="gallery-card">
+                <img src="./image/image4.jpg" alt="Дьявол носит Prada">
+                <div class="card-body">
+                    <h3>Дьявол носит Prada</h3>
+                    <div class="card-meta">30 июня 2026 года</div>
+                    <p class="card-desc">Мечтающая стать журналисткой Энди получает должность помощницы всесильной Миранды Пристли, деспотичного редактора нью-йоркского журнала мод.</p>
+                    <div class="card-actions">
+                        <div class="tags"><span class="tag">драма</span><span class="tag">комедия</span></div>
+                        <button class="like-btn">❤️ <span class="likes">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Карточка 5 -->
+            <article class="gallery-card">
+                <img src="./image/image5.jpg" alt="Приключения Шаркбоя и Лавы">
+                <div class="card-body">
+                    <h3>Приключения Шаркбоя и Лавы</h3>
+                    <div class="card-meta">10 июня 2005 года</div>
+                    <p class="card-desc">10-летний герой придумывает себе двух несуществующих друзей: мальчика-акулу и девочку-лаву, вместе с которыми пускается в волшебное путешествие.</p>
+                    <div class="card-actions">
+                        <div class="tags"><span class="tag">приключения</span><span class="tag">фантастика</span></div>
+                        <button class="like-btn">❤️ <span class="likes">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Карточка 6 -->
+            <article class="gallery-card">
+                <img src="./image/image6.jpg" alt="Девять жизней">
+                <div class="card-body">
+                    <h3>Девять жизней</h3>
+                    <div class="card-meta">1 сентября 2016 года</div>
+                    <p class="card-desc">Бизнесмен-трудоголик обнаруживает себя в теле роскошного кота. Пока он отсыпается в больнице, кот вынужден возвращать любовь семьи, чтобы не остаться питомцем навсегда.</p>
+                    <div class="card-actions">
+                        <div class="tags"><span class="tag">фэнтези</span><span class="tag">драма</span></div>
+                        <button class="like-btn">❤️ <span class="likes">0</span></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="info-card" style="margin-top: 30px;">
+            <h2>Интересный факт</h2>
+            <p>Вы знали, что в фильме "Приключения Шаркбоя и Лавы" в роли мальчика Шаркбоя снимался известный актёр Тейлор Лотнер, который стал более известен благодаря роли Джейкоба Блэка в вампирской саге "Сумерки".</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Подзорова Мария. Все права защищены.</p>
+        <p class="js-status">JavaScript загружен и работает!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
